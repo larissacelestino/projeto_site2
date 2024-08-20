@@ -1,0 +1,88 @@
+*{
+    font-size: 12px;
+    font-family: verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#interface {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#interface .cabecalho {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    borden: 1px solid yellow; 
+}
+
+#interface .cabecalho .logoMenu { /* TAG NAV */
+    isplay: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 7rem;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 992px) {
+     #intercafe .cabecalho .logoMenu{
+        justify-content: space-around;
+     }
+}
+    
+    #interface .cabecalho .LogoMenu .linkLogo {
+        display: block;
+         width: 120px;
+}
+
+#interface .cabecalho .LogoMenu .linkLogo img {
+    width: 100%;
+}
+
+#interface .cabecatho .LogaMenu .btnToggle {
+    display: block;
+    flex-direction: 2rem;
+    color: none;
+}
+
+#interface .cabecalho .LogaMenu {
+    display: block;
+}
+
+#interface .cabecalho .LogoMenu .menu{
+    display: none;
+    flex-direction: row;
+    list-style: none;
+}
+
+@media screen and (min-width: 600px) {
+    #interface .cabecalho .LogaMenu .menu{
+        display: flex;
+    }
+}
+ 
+#interface .cabecalho .logoMenu .menu li a ::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fafafa;
+    border-bottom: 2px solid #fafafa;
+}
+ 
+#interface .cabecalho .LogaMenu .menu {
+     /*display: inline-block; */
+     color: #fafafa;
+     font-size: 1.5rem;
+     padding: 5rem 1rem;
+     text-decoration: none;
+    text-transform: uppercase;
+}
+   
